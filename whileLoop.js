@@ -7,3 +7,16 @@ var loop = function(i){
 };
 
 loop();
+
+//Do While loop example:
+
+var theChoppa = false;
+
+var getToDaChoppa = function(theChoppa){
+do {
+    console.log("If getting to the choppa is " + theChoppa + " then don't get on the choppa!");
+    } while (theChoppa);
+  
+};
+
+getToDaChoppa(theChoppa);
