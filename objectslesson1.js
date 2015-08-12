@@ -139,4 +139,47 @@ function Rabbit(adjective) {
 var rabbit1 = new Rabbit("fluffy");
 var rabbit2 = new Rabbit("happy");
 var rabbit3 = new Rabbit("sleepy");
+///////////////////////////////////////////////
+//Add one more Person to the family array, "timmy", who is 6 years old.
+
+// Our person constructor
+function Person (name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+// Now we can make an array of people
+var family = new Array();
+family[0] = new Person("alice", 40);
+family[1] = new Person("bob", 42);
+family[2] = new Person("michelle", 8);
+family[3] = new Person("timmy",6);
+// add the last family member, "timmy", who is 6 years old
+
+///////////////////////////////////////////////////
+///// Write a person constructor called Person that has two properties (name and age).
+
+// Create an empty array called family.
+// Our Person constructor
+function Person (name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+// There will be four objects in the array. Using your Person constructor, 
+// create the four objects and put them in the array. The order of the objects are.
+// Now we can make an array of people
+var family = new Array();
+ family[0] = new Person("alice", 40);
+ family[1] = new Person("bob", 42);
+ family[2] = new Person("michelle", 8);
+ family[3] = new Person("timmy", 6);
+// loop through our new array
+
+// Create a for-loop that loops through the family array and prints out the name property for each family member in order of creation.
+for (var i = 0; i < family.length; i++) {
+    console.log(family[i].name);
+    };
+    
+/////////////////////////////////////////////////  
 
