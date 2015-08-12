@@ -101,3 +101,42 @@ function Dog(age, color) {
     
     }
 
+/////////////////////////////////////////////
+///Create a new object called sally using the 
+///Person constructor. Her name is "Sally Bowles" and she 
+///is 39. Create another object called holden. His name is 
+///"Holden Caulfield" and he is 16.
+
+Edit the sentence printed out such that it includes the age of sally and holden respectively.
+
+function Person(name,age) {
+  this.name = name;
+  this.age = age;
+  this.species = "Homo Sapiens";
+}
+
+var sally = new Person ("Sally Bowles", 39);
+var holden = new Person ("Holden Caulfield", 16);
+console.log("sally's species is " + sally.species + " and she is " + sally.age);
+console.log("holden's species is " + holden.species + " and he is " + holden.age);
+
+/////////////////////////////////////
+// Create a new object rabbit1 with the adjective "fluffy",
+// a new object rabbit2 with the adjective "happy", and a new
+// object rabbit3 with the adjective "sleepy".
+
+// Use the method describeMyself to print out in the console a sentence
+//  about each object you just created!
+
+function Rabbit(adjective) {
+    this.adjective = adjective;
+    this.describeMyself = function() {
+        console.log("I am a " + this.adjective + " rabbit");
+    };
+}
+
+// now we can easily make all of our rabbits
+var rabbit1 = new Rabbit("fluffy");
+var rabbit2 = new Rabbit("happy");
+var rabbit3 = new Rabbit("sleepy");
+
