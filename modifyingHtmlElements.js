@@ -10,3 +10,11 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('#one').after('<p>Some text</p>');
 });
+
+//remove a p tage from an html document
+$(document).ready(function(){
+var $target = $('<p>Some text</p>');
+$('#one').after($target);
+$('#two').after($target);
+$('p').remove();
+});
